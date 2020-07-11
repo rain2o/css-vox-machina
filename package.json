@@ -1,0 +1,14 @@
+{
+  "name": "vox-machina",
+  "version": "1.0.0",
+  "description": "Vox Machina CSS Art",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^4.0.0"
+  }
+}
