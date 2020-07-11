@@ -1861,14 +1861,18 @@ body {
   position: relative;
   z-index: 0;
   overflow: hidden; }
-  .pike .head:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #fff; }
+  .pike .head-container {
+    position: relative;
+    z-index: 0; }
+    .pike .head-container .glow {
+      z-index: -1;
+      display: block;
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: -20px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 0px #fff; }
   .pike .hair {
     position: absolute;
     top: 15px;
@@ -1961,7 +1965,7 @@ body {
     text-align: center;
     margin-left: 1rem;
     bottom: -25px; }
-  .pike:hover .head:after {
+  .pike:hover .head-container .glow {
     box-shadow: 0px 5px 50px 20px #fff; }
   .pike:hover .eyes .eye:after {
     top: 15%;
@@ -2403,28 +2407,28 @@ body {
           right: 0; }
       .scanlan .music .notes:nth-of-type(1) {
         top: 15px;
-        left: 12px; }
+        left: 285px; }
       .scanlan .music .notes:nth-of-type(2) {
         top: 30px;
-        left: 123px; }
+        left: 167px; }
       .scanlan .music .notes:nth-of-type(3) {
         top: 45px;
-        left: 164px; }
+        left: 271px; }
       .scanlan .music .notes:nth-of-type(4) {
         top: 60px;
-        left: 286px; }
+        left: 90px; }
       .scanlan .music .notes:nth-of-type(5) {
         top: 75px;
-        left: 162px; }
+        left: 247px; }
       .scanlan .music .notes:nth-of-type(6) {
         top: 90px;
-        left: 249px; }
+        left: 219px; }
       .scanlan .music .notes:nth-of-type(7) {
         top: 105px;
-        left: 276px; }
+        left: 216px; }
       .scanlan .music .notes:nth-of-type(8) {
         top: 120px;
-        left: 193px; }
+        left: 243px; }
   .scanlan:hover .eyes .eye {
     height: 2px;
     margin-top: 10px; }
@@ -3407,8 +3411,6 @@ body {
     top: -10px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    border-radius-bottom-left: 10px;
-    border-radius-bottom-right: 10px;
     box-shadow: none; }
     .doty .head:before, .doty .head:after {
       content: "";
